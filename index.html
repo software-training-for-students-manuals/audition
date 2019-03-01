@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- 
+WELCOME USER! You've reached the source code for a manual created by STS. If you plan on updating or editing this manual, then you're in the right place!
+
+Before editing this manual, please read through the manual editing guide at https://sts.doit.wisc.edu/manuals/manual-editing-guide/ and follow its recommendations. It is important that we adhere to the conventions set in the guide in order to maintain quality and consistency across all manuals.
+
+A few things to note:
+
+* In order to have a working preview with accurate CSS and functional JavaScript, you will need a copy of the /master-files folder in the same parent directory as the folder with your manual editing files in it, e.g. if you have a folder on your desktop "STS Manuals", and you're editing the Excel 1 manual in the "excel1" folder and the Photoshop 1 folder in the "photoshop1" folder, you will need to have the "master-files" folder in "STS Manuals" as well, since the manual files link to the CSS/Javascript using relative links. Your folder will look like this: 
+
+├STS Manuals 
+├╴╴excel1
+├╴╴╴╴╴images
+├╴╴╴╴╴class_files
+├╴╴master-files
+├╴╴photoshop1
+├╴╴╴╴╴images
+├╴╴╴╴╴class_files
+
+
+* Manuals should be arranged into Topics, which are enclosed in the <section class="topic"> tag, and followed immediately by an <h1> tag with the topic name in it, e.g.
+
+<section class="topic">
+<h1>Topic name</h1>
+<p>Neat and helpful information goes here</p>
+</section>
+
+The <section class="topic"> and following <h1> element are how the manual's JavaScript automagically builds the Topics outline and creates the links, so if they are not there, the manual will be without a table of contents and its friends will probably make fun of it (which is decidedly not cool).
+
+* Unless you are changing the contents of the <title></title> tag, you should not have to touch the <head> portion of this document (unless instructed to do so). This tag connects the HTML to the CSS and JavaScript that keep the manual functioning. Look for the comment tag that says "MAIN CONTENT", and you may edit there.
+
+
+Good luck, and have fun!
+
+-->
+
+<head>
+
+    <!-- Manual title -->
+    <title>Adobe Audition</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Software manual provided by Software Training for Students at the University of Wisconsin.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel='stylesheet' id='uwmadison-fonts-css' href='https://brand.wisc.edu/content/themes/uw-theme/dist/fonts/uw160/fonts.css?ver=1.1.1' type='text/css' media='all' />
+    <link rel="stylesheet" type="text/css" href="../master-files/css/stylesheet.css">
+    <script src="../master-files/highlight.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="../master-files/smooth-scroll.js"></script>
+    <script src="../master-files/primary-functions.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script src="../master-files/ga.js"></script>
+
+</head>
+
+<body>
+    <!-- begin front page -->
+
+    <div class="manual-front-page">
+        <div id="coverpage-title">
+            <h1>Adobe Audition</h1>
+            <h2>A Powerful Audio Editing Software</h2>
+        </div>
+        <div id="about-page"></div>
+        <div id="outline"></div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+
+
+    <section class="topic">
+        <h1>Intro to Audition</h1>
+        <img src="images/01-audition-logo.jpg" alt="adobe audition logo with blurred out workspace in background">
+        <p>Adobe Audition is a digital audio workstation great for creating sound projects such as podcasts and songs! This software features both a Multitrack View for non-destructive editing and mixing, as well as a Waveform View for a destructive editing approach to a single audio file. If you’re at all familiar with other Adobe Creative Cloud programs, you’ll notice many similarities in the layout and tools used between softwares, making this program that more approachable.</p>
+
+        <p>Make sure to <strong>download the Class Files</strong> for this course from the Canvas page before you continue on.</p>
+    </section>
+
+    <section class="topic">
+        <h1>Adobe Audition Interface</h1>
+        <p>It should be noted that the following panels are opened automatically while using the <strong>Default</strong> setting. You can add or remove panels by going to the <strong>Window</strong> Menu. To change the setting, you can go to <strong>Window > Workspace</strong> and choose a new setting.</p>
+        <img src="images/02-interface.PNG" alt="adobe audition interface">
+
+        <h2>Panels</h2>
+        <p>Learn more about the different panels that make up the interface of Adobe Audition below!</p>
+
+        <h3>Editor</h3>
+        <p>The Editor Panel is the space where audio clips are brought in to edit directly and/or add effects. Here is where you will be able to use editing tools such as the Razor Tool and Time Selection Tool to manipulate any audio within this panel. Audio clips brought into this panel might look slightly different depending on whether you are in <strong>Waveform</strong> or <strong>Multitrack</strong> view.</p>
+        <br>
+        <h4>Editor Panel in Multitrack View:</h4>
+        <img class="center" src="images/04-editor-multitrack.PNG" alt="screenshot of the editor panel in multitrack view">
+        <br>
+        <h4>Editor Panel in Waveform View:</h4>
+        <img class="center" src="images/04-editor-waveform.PNG" alt="screenshot of the editor panel in waveform view">
+
+        <h3>Files</h3>
+        <p>The Files Panel is where all audio files recorded into Audition (while on Waveform view) are automatically saved to. They can be referenced here and be brought into Multitrack view for further editing by simply clicking and dragging the audio file into the Editor Panel.</p>
+        <img class="center" src="images/05-files-panel.PNG" alt="screenshot of files panel">
+
+        <p>You can also import audio clips stored in your computer or external hard drive by clicking on the folder icon with the arrow pointing right and locating your file.</p>
+        <img class="center" src="images/06-files-panel-importing.gif" alt="gif showing how to import files through the files panel">
+
+        <p>To have clips <strong>automatically play</strong> a preview once they're clicked, click on the <strong>Auto-Play</strong> button found near the bottom of the panel to activate it.</p>
+        <img class="center" src="images/07-files-panel-autoplay.gif" alt="gif showing how to activate the auto-play feature">
+
+        <h3>Media Browser</h3>
+        <p>The Media Browser is a more detailed and quicker way to preview and import clips.</p>
+        <img class="center" src="images/08-media-browser-panel.PNG" alt="screenshot showing the media browser panel">
+        <ul>
+            <li>
+                <p>To create a <strong>shortcut</strong> to a folder you will be referencing a lot during a project, select the folder, click on the the plus sign near the top of the panel, and choose "Add Shortcut for Selected Folder(s)".</p>
+
+                <p><strong>FOR THIS EXAMPLE:</strong> locate the Class Files folder you downloaded earlier and add it to Shortcuts.</p>
+                <img class="center" src="images/09-media-browser-shortcuts.gif" alt="gif showing how to move folders into the shortcuts section within the media browser panel">
+            </li>
+
+            <li>To have clips <strong>automatically play</strong> a preview once they're clicked, click on the <strong>Auto-Play</strong> button found near the bottom of the panel to activate it.</li>
+            <img class="center" src="images/10-media-browser-autoplay.gif" alt="gif showing how to activate the auto-play feature within the media browser panel">
+
+            <li>To <strong>import</strong> clips, simply click and drag the clip(s) to the Editor Panel.</li>
+        </ul>
+
+        <h3>Effects Rack Panel</h3>
+        <p>The Effects Rack Panel allows you to see all the effects that have been added to a single selected audio clip. </p>
+        <img class="center" src="images/47-effects-rack-panel.PNG" alt="screenshot showing the effects rack panel">
+        <ul>
+            <li>The Effects Rack Panel is in the same area as the Media Browser Panel. To bring it up, click the two right arrows and select Effects Rack from the options. It will also automatically be brought up whenever you add an effect to an audio clip.</li>
+            <li>To delete any effect, simply click on it and press the <kbd>Backspace</kbd>/<kbd>Delete</kbd> key on your keyboard, or click on the trashcan icon next to the presets.</li>
+
+            <li>To edit an effect, double-click on it to bring up it's corresponding pop-up box.</li>
+        </ul>
+
+        <h3>History Panel</h3>
+        <p>The History Panel allows you to see all of the edits that have been made to a project and allows you to navigate to different versions of the project before certain edits were made. You can go back to particular versions of project by permenantly deleting certain edits, however any edit that is deleted will also delete any edits that came after it.</p>
+        <img class="center" src="images/11-history-panel.PNG" alt="screenshot of the history panel">
+
+        <h2>Menu Bar</h2>
+        <p>The Menu Bar has all of the tools and actions needed to complete our sound projects. We will be navigating the File, Edit, Clip, and Effects menus later on in this training, but feel free to explore for yourself the many different editing resources Audition provides!</p>
+        <img class="full-width" src="images/12-menu-bar.PNG" alt="screenshot showing the menu bar with options file, edit, multitrack, clip, effects, favorites, view, window, help">
+
+        <h3>Window</h3>
+        <p>The Window Menu is where you can open or close different panels that appear within your workspace. Depending on what setting you are in (for us it's the Default setting), certain panels will already be selected under this menu, while others not. To add panels, simply click on one not yet selected from the Window Menu. Similarly, to remove panels, simply click on one already selected from the Window Menu.</p>
+        <img class="center" src="images/13-windows-menu.gif" alt="gif showing how to remove and add panels from the window menu">
+
+        <h2>Waveform vs. Multitrack View</h2>
+        <p>Adobe Audition offers two session types to edit audio. One may be a better choice than the other, depending on what project needs to be completed. Read below to learn more about Waveform and Multitrack view.</p>
+
+        <h3>Waveform</h3>
+        <p>The Waveform view is a <strong>destructive editing area</strong> for a single audio file which means all edits are permanant to the original file once saved. You can always undo (<kbd>Ctrl + Z</kbd>/<kbd>Cmd + Z</kbd>) edits and save the file again to keep a past version of the file.</p>
+        <p>In case you want to<strong> record audio directly </strong>to Adobe Audition, make sure you are on the Waveform view as it is the only one of the two sessions that allows you to do so.</p>
+
+        <h3>Multitrack</h3>
+        <p>The Multitrack view is a non-destructive editing area for multiple audio files, which means that all cuts, edits, and effects done or added to the audio clips in one project will not change the original audio files.</p>
+        <p>All audio recorded in Waveform view can be brought into Multitrack view via the Files Panel.</p>
+    </section>
+
+    <section class="topic">
+        <h1>Beginning a New Project</h1>
+        <p>The following steps will guide you in creating your first project in Adobe Audition:</p>
+
+        <h2>Opening a New Project</h2>
+        <p> To open a New Project, go to <strong>File > New...</strong> and select either <strong>Multitrack View...</strong> to open a session that will let you import and work with multiple audio files, or <strong>Audio File...</strong> to open a session that allows you to import and edit a single audio file or the opportunity to record your own audio clip. Give it an appropriate name and make sure the folder is set to a location you'll be able to find it later.</p>
+        <img class="center" src="images/14-new-multitrack-project.PNG" alt="screenshot of going to File > New > Multitrack View..">
+
+        <p><strong>FOR THIS EXAMPLE:</strong> open the Multitrack View and name the project "<strong>Practice Podcast Intro</strong>". You can always switch from one view to the other easily.</p>
+        <img class="center" src="images/15-project-name.PNG" alt="screenshot of filling out new project name to " Practice Podcast Intro "">
+
+
+        <h2>Renaming a Track</h2>
+        <p>To rename a track, simply <strong>click</strong> once on the track's name on the Editor Panel to activate it. Change the name to something that reflects the audio clips on that track.</p>
+
+        <p><strong>FOR THIS EXAMPLE:</strong> rename Track 1 to "Voiceover" and Track 2 to "Background Music".</p>
+        <img src="images/16-renaming-tracks.gif" alt="gif showing how to rename tracks in the editor panel to 'voiceover' and 'background music'">
+
+        <h2>Importing Files</h2>
+        <p>There are multiple ways to bring in audio files saved on your computer or external hard drive to your Audition Project. Here are a few:</p>
+
+        <h3>Importing From the Finder/File Explorer</h3>
+        <ol class="instruction-list">
+            <li>Open the Finder or File Explorer from your computer</li>
+            <li>Find the folder where your audio files are saved in</li>
+            <li>Click and drag the audio files directly to the appropriate Track on your Editor Panel</li>
+            <img src="images/17-importing-file-explorer.gif" alt="gif showing how to import files using the file explorer in windows(finder on mac) by simply dragging to a track on the editor panel">
+        </ol>
+
+        <h3>Importing From the File Menu</h3>
+        <ol class="instruction-list">
+            <li>
+                Go to <strong>File > Import > File...</strong>
+            </li>
+            <li>Select the audio files you would like to use and edit. To select multiple files at once, click on the files while holding down the <kbd>Ctrl</kbd>/<kbd>Cmd</kbd> key</li>
+            <li>The imported files will appear in the <strong>Files Panel</strong>. Drag the file(s) to the Editor Panel tracks to edit them.</li>
+            <img src="images/18-importing-file-menu.gif" alt="gif showing how to import files from the file menu">
+        </ol>
+
+        <h3>Importing From the Files Panel</h3>
+        <ol class="instruction-list">
+            <li>Navigate to the File Panel</li>
+            <li>Click on the folder icon with an arrow point to the right.</li>
+            <li>Select the audio files you would like to use and edit. To select multiple files at once, click on the files while holding down the <kbd>Ctrl</kbd>/<kbd>Cmd</kbd> key</li>
+            <img src="images/19-importing-file-panel.gif" alt=" gif showing how to import files from the files panel">
+        </ol>
+
+        <h3>Importing From the Media Browser</h3>
+        <ol class="instruction-list">
+            <li>Navigate to the Media Browser</li>
+            <li>Find the folder where your audio files are saved in</li>
+            <li>Click and drag the audio files to the appropriate Track on your Editor Panel</li>
+            <li><strong>FOR THIS EXAMPLE:</strong> import the two audio files from the Class Files folder you downloaded. Place each audio in the correct track.</li>
+            <img src="images/20-importing-media-browser.gif" alt="gif showing how to import files from the media browser">
+        </ol>
+
+        <h2>Recording in Audition</h2>
+        <p>Audition has a built in recording feature, allowing for audio to be recorded right into the software instead of having to record on a separate device and import it later.</p>
+
+        <h3>Setting Up the Microphone</h3>
+        <p>Usually your computer will automatically find and set-up the correct microphone, but in case that it doesn't, complete the following steps:</p>
+        <ol class="instruction-list">
+            <li>Go to <strong>Edit > Preferences > Audio Hardware...</strong></li>
+            <li>Change the <strong>Default Input</strong> to the microphone you will be using. All connected and available microphones should be listed and labeled appropriately within that menu.</li>
+            <li>You can also change the <strong>Default Output</strong> if you'd like your audio to come out a specific speaker or headphone</li>
+            <img src="images/21-audio-preferences.gif" alt="gif showing how to change the defualt input and output in preferences">
+        </ol>
+
+        <h3>Recording</h3>
+        <p>Once you have your microphone set up, you are ready to start recording!</p>
+        <h4>Recording in Waveform View</h4>
+        <ol class="instruction-list">
+            <li>Make sure you are in <strong>Waveform View</strong>. If you are in Multitrack view, navigate to the top-left of your work station and click on the <strong>Waveform</strong> button or go to <strong>File > New > Audio File...</strong></li>
+            <img class="center" src="images/22-waveform-button.PNG" alt="waveform button under the menu bar">
+
+            <li>If a <strong>New Audio File</strong> box pops up, name the file something relevant. <strong>FOR THIS EXAMPLE: Name it "Practice Voiceover"</strong> and keep the rest of the default settings as they are.</li>
+            <img class="center" src="images/23-new-audio-file.PNG" alt="new audio file pop-up box with name " practice voiceover "">
+
+            <li>Click on the <strong>Record</strong> button on the bottom of the Editor Panel to begin recording. Start your speech!</li>
+            <p><strong>FOR THIS EXAMPLE:</strong> say "You're listening to the STS Show! Where you'll learn technology tips and tricks to get you feeling confident for any upcoming project. On today's show, we will be focusing on effects in Audition. So sit back, relax, and prepare to learn some sound design."</p>
+
+            <li>Click the <strong>Pause</strong> button to temporarily stop recording or click the <strong>Stop</strong> button to completely stop recording.</li>
+            <img src="images/24-recording.gif" alt="gif showing how to record in audition">
+            <li>Click your <kbd>Spacebar</kbd> or the <strong>Play</strong> button to playback your recording</li>
+            <li>Edit your audio as you would like. But remember that all edits within the Waveform View are permanant to the original file!</li>
+            <p>Note that your audio recording will automatically save to the Files Panel, where you can easily find for later use.</p>
+
+            <li><strong>Transferring Recordings From Waveform to Multitrack View</strong></li>
+            <p>In case you recorded some audio in Waveform View, and want to edit it non-destructively or alongside other audio files, follow these steps to move recorded audio files from Waveform View to Multitrack view.</p>
+            <ol class="instruction-list">
+                <li>Navigate to the top-left of your work station and click on the <strong>Multitrack</strong> button.</li>
+                <img class="center" src="images/25-multitrack-button.PNG" alt="multitrack button under the menu bar">
+                <li>Navigate to the <strong>Files Panel</strong> and locate your audio recording</li>
+                <li>Click and drag your audio recording to one of the tracks in the Editor Panel.</li>
+                <p><strong>FOR THIS EXAMPLE:</strong> click and drag the "Practice Voiceover" to one of the tracks, or use the "Voiceover" audio file provided from the Class Files.</p>
+                <img src="images/26-transferring.gif" alt="gif showing to how to transfer audio recorded in waveform view to multitrack view">
+            </ol>
+        </ol>
+
+
+        <h4>Recording in Multitrack View</h4>
+        <ol class="center">
+            <li>Make sure you are in <strong>Multitrack View</strong>. If you are in Waveform view, navigate to the top-left of your work station and click on the <strong>Multitrack</strong> button or go to <strong>File > New > Multitrack Session...</strong></li>
+            <img class="center" src="images/25-multitrack-button.PNG" alt="multitrack button under the menu bar">
+
+            <li>Navigate to the Track you would like to record on. <strong>FOR THIS EXAMPLE:</strong> Choose the Voiceover Track.</li>
+
+            <li>"Arm the Track" by clicking the "R". It is now ready for you to record on that Track!</li>
+            <img src="images/34-recording-multitrack.gif" alt="arming the track and recording in multitrack view">
+
+            <li>Click on the <strong>Record</strong> button on the bottom of the Editor Panel to begin recording. Start your speech!</li>
+            <p><strong>FOR THIS EXAMPLE:</strong> say "You're listening to the STS Show! Where you'll learn technology tips and tricks to get you feeling confident for any upcoming project. On today's show, we will be focusing on effects in Audition. So sit back, relax, and prepare to learn some sound design."</p>
+
+            <li>Click the <strong>Pause</strong> button to temporarily stop recording or click the <strong>Stop</strong> button to completely stop recording.</li>
+            <img src="images/24-recording.gif" alt="gif showing how to record in audition">
+            <li>Click your <kbd>Spacebar</kbd> or the <strong>Play</strong> button to playback your recording</li>
+            <li>Edit your audio as you would like!</li>
+        </ol>
+
+    </section>
+
+    <section class="topic">
+        <h1>Navigating Audio in the Editor Panel</h1>
+        <p>It's important to know how to navigate your audio within the Editor Panel space before any editing takes place. Knowing how to do all of the following will help you edit your file(s) even better.</p>
+
+        <h2>Playback Buttons</h2>
+        <p>Just as with any standard audio device, Adobe Audition provides you with the basic playback buttons that you may already be familiar with. Going from left to right, the buttons are: Stop, Play, Pause, Move Playhead to Previous, Rewind, Fast Forward, Move Playhead to Next, and Record. There are more buttons nearby, but we will get to them in a bit.</p>
+        <img class="center" src="images/27-playback-buttons.PNG" alt="playback buttons displaying Stop, Play, Pause, Move Playhead to Previous, Rewind, Fast Forward, Move Playhead to Next, and Record">
+        <p>The keyboard shortcut to Stop and Play is the <kbd>Spacebar</kbd></p>
+        <p>You can also use your left and right arrow keys on your keyboard to rewind or fast forward</p>
+
+        <h2>Zoom-In/Out</h2>
+        <ul>To zoom in or out, you can either:
+            <li>Click on the buttons found at the bottom of the Editor Panel right next to the playback buttons</li>
+            <img src="images/28-zoom-tools.PNG" alt="zoom buttons found near the bottom of the editor panel">
+            <li>Hover over the bar in the Editor Panel and scroll up or down on your mouse. You can also hover over the audio clip and scroll up or down, but sometimes it doesn't work with the track pad.</li>
+            <img src="images/29-zoom-scroll.gif" alt="gif showing how to zoom in or out while scrolling up or down on your mouse or track pad">
+            <li>Select your audio clip and click the <kbd>-</kbd> or <kbd>+</kbd> keys on your keyboard</li>
+        </ul>
+
+        <h2>Moving Throughout Audio</h2>
+        <p>To navigate to a different part of your audio while zoomed-in, go to the top bar of the Editor Panel and move the zoomed-in window accordingly.</p>
+        <img src="images/37-moving-while-zoomed.gif" alt="gif showing how to move to different parts of audio while zoomed in using the top bar of the editor panel">
+
+        <h2>Adjusting Volume</h2>
+        <ul>To adjust your volume, you can either:
+            <li>Drag the yellow line on the audio up or down within the track. To create more volume variation, click on different parts of the yellow line to create new audio volume anchors and drag accordingly. It does not matter what tool you’re using.</li>
+            <img src="images/30-volume-yellow-line.gif" alt="gif showing how to adjust the volume by moving the yellow volume line and creating anchor points">
+
+            <li>Use the <strong>Volume knob</strong> on the track</li>
+            <img src="images/31-volume-knob.gif" alt="gif showing how to adjust the volume with the volume knob">
+            <p><strong>FOR THIS EXAMPLE:</strong> Make the Voiceover track a bit louder so you can hear it better, and make the Background Music track quieter so it doesn't overpower the voiceover.</p>
+
+        </ul>
+
+        <h2>Looping</h2>
+        <p>Click on the <strong>Loop Playback</strong> button. This feature allows you to loop parts of an audio selected with the Time Selection Tool. It is helpful for editing extremely detailed parts of an audio clip.</p>
+        <img src="images/32-looping.gif" alt="gif showing how to activate the loop playback feature">
+
+        <h2>Manipulating Audio Length</h2>
+        <p>Manipulate the audio length by dragging the ends of a clip inwards or outwards.</p>
+        <p><strong>FOR THIS EXAMPLE:</strong> Drag the ends of the "Voiceover" audio clip so that it only contains audio with voice.</p>
+        <img src="images/33-trimming.gif" alt="gif showing how to drag the ends of an audio clip to trim it">
+
+        <h2>Mute and Solo</h2>
+        <p>Click on the "M" on a track to mute all the audio clips on the track.</p>
+        <p>Click on the "S" on a track to solo all the audio clips on that track. This will mute all other tracks and their audio clips so that you can only hear the track on solo mode.</p>
+        <img src="images/36-mute-solo.gif" alt="gif showing how to mute and solo a track">
+    </section>
+
+    <section class="topic">
+        <h1>Basic Editing Tools</h1>
+        <p>While there are more editing tools, the following three are the best to refer to when first working with Adobe Audition. <strong>These tools can be found right above the Files Panel, next to the Waveform/Multitrack buttons.</strong></p>
+        <div class="tool-reference">
+            <h2>Move Tool (<kbd>V</kbd>)</h2>
+            <img src="images/38-move-tool.PNG" alt="move tool icon">
+            <p>The Move Tool (V) allows you to move audio clips within a track and between tracks while clicking on any part of the clip.</p>
+            <p>You can also use the other tools below to move an audio clip, but have to make sure to grab the clip from its titled area.</p>
+            <p><strong>FOR THIS EXAMPLE:</strong> Use the Move Tool to move your trimmed Voiceover clip over 12.5 seconds, so that it begins right after the drop of the Background Music. Adjust the volume of the Background Music so that it gets quieter once the voiceover begins by adding two volume anchor points and dragging the second one down.</p>
+            <img src="images/42-move-fade-example.PNG" alt="screenshot of how the audio clips and their volumes should be arranged">
+        </div>
+
+        <div class="tool-reference">
+            <h2>Razor Tool (<kbd>R</kbd>)</h2>
+            <img src="images/39-razor-tool.PNG" alt="razor tool icon">
+            <p>The Razor Tool allows you to split an audio clip into parts by making cuts to the clip.</p>
+            <p>To remove a part of an audio clip, make cuts (click) around the audio you'd like to remove, click where the clip is titled to select it, and hit the <kbd>Backspace</kbd>/<kbd>Delete</kbd> Key on your keyboard.</p>
+            <p>To remove a part of the clip and automatically move the remaining audio to fill its place, right-click and choose <strong>Ripple Delete > Selection</strong></p>
+        </div>
+
+        <div class="tool-reference">
+            <h2>Time Selection Tool (<kbd>T</kbd>)</h2>
+            <img src="images/40-time-selection-tool.PNG" alt="time selection tool icon">
+            <p>Kind of an “all-in-one” tool, the Time Selection Tool allows you to highlight parts of your audio clips to manipulate just that selected area.</p>
+        </div>
+    </section>
+
+    <section class="topic">
+        <h1>Audio Transitions</h1>
+        <p>Adding audio transitions between clips and/or spaces between clips typically offers a smoother listening experience and helps a project sound more professional.</p>
+        <h2>Fade-In/Out</h2>
+        <ol class="instruction-list">
+            <li>Locate the grey boxes in the top left and right corners of your audio file on the track.</li>
+            <li>Click and drag the boxes towards the center of the audio to create a fade. The closer the to the center you drag the boxes, the longer the fades will be.</li>
+            <li>Drag up and down to adjust the fade shape</li>
+            <img src="images/41-fade-in-out.gif" alt="gif showing how to fade audio in and out">
+        </ol>
+    </section>
+
+    <section class="topic">
+        <h1>Audio Effects</h1>
+        <p>There is an incredible amount of effects you can add to your project in Audition. The following are great to get you started! All effects that are applied to a clip will appear in the Effects Panel. Here you can double-click on an applied effect to edit it.</p>
+
+        <div class="tool-reference">
+            <h2>Amplify</h2>
+            <img src="images/43-amplify.PNG" alt="amplify pop-up box">
+            <p>This effect allows you to boost up the volume of an audio clip. It essentially does the same job as the yellow volume line or knob within a Track in the Editor Panel.</p>
+            <ol class="instruction-list">
+                <li>Select the audio clip(s) you would like to amplify</li>
+                <li>Go to <strong>Effects > Amplitude and Compression > Amplify</strong></li>
+                <li>From the Amplify pop-up box, toggle the knob to increase or decrease amplification. To preview the audio file while adjusting the amplification, playback your audio normally from the Editor Panel.</li>
+            </ol>
+        </div>
+
+        <div class="tool-reference">
+            <h2>Parametric Equalizer</h2>
+            <img src="images/42-eq.gif" alt="gif showing different presets in EQ">
+            <p>An equalizer, or EQ, is a filter that allows you to adjust the volume level of a frequency within an audio clip. This makes it easier for sounds to become more dynamic, adding more crisp or base depending on what your project needs. For example, using EQ is a great way to make a "talking over the phone" sound quality.</p>
+            <ol class="instruction-list">
+                <li>Select the audio clip(s) you would like to equalize</li>
+                <li>Go to <strong>Effects > Filter and EQ > Parametric Equalizer</strong></li>
+                <li>From the Parametric Equalizer pop-up box, first play around with the preset options from the drop-down menu. Feel free to experiment by moving the anchor points on the line to shift the frequencies being affected. To preview the audio file while adjusting the EQ, playback your audio normally from the Editor Panel. TIP: use the <strong>Loop Playback</strong> feature to keep listening to the sample with no disruptions!</li>
+            </ol>
+            <p><strong>FOR THIS EXAMPLE:</strong> Select the Voiceover audio and choose the "Loudness Maximizer" preset in the EQ drop-down menu</p>
+        </div>
+
+        <div class="tool-reference">
+            <h2>Noise Reduction</h2>
+            <img src="images/44-noise-reduction.gif" alt="gif showing how to use the noise reduction effect">
+            <p>This effect allows you to lessen the amount of background noise within a selected audio. While it is recommended that you record in a silent space, sometimes our mics still pick up background noise or it simply isn't possible to find a quiet space within a given time.</p>
+            <ol class="instruction-list">
+                <li>If on Multitrack View, double-click on the audio clip you would like to reduce (background) noise to open it in Waveform View.</li>
+                <li>Using the <strong>Time Selection Tool <kbd>T</kbd></strong>, select a small sample of the clip that is only background noise. Typically this sample will be found at the beginning or end of a clip where only background noise has been captured. If you already trimmed the clip to only include the main recording subject, you may want to pull one of the edges of the clip outwards to reveal some background noise.</li>
+                <li>Go to <strong>Effects > Noise Reduction/Restoration > Noise Reduction (process)...</strong></li>
+                <li>From the Noise Reduction pop-up box, first click on the <strong>Capture Noise Print</strong></li>
+                <li>Using the <strong>Time Selection Tool <kbd>T</kbd></strong>, select the entire part of the clip you would like to reduce background noise to</li>
+                <li>From the Noise Reduction pop-up box, click and drag on the blue line to move the green dots so they are on the yellow dots. This is the easiest way to reduce noise. However, feel free to experiment by moving the line around more! To preview the audio file while adjusting the EQ, playback your audio normally from the Editor Panel. TIP: use the <strong>Loop Playback</strong> feature to keep listening to the sample with no disruptions!</li>
+                <li>After you've applied your effects, click on the Multitrack View to go back to your session.</li>
+            </ol>
+            <p><strong>FOR THIS EXAMPLE:</strong> Double-click on the Voiceover audio and follow the steps above! Notice, however, that even with this effect, the background noise can still be heard (this was recorded at a coffee shop), so keep this in mind when recording your audio!</p>
+
+        </div>
+
+        <div class="tool-reference">
+            <h2>Reverb</h2>
+            <img src="images/45-reverb.gif" alt="gif showing how to add reverb">
+            <p>Reverb essentially allows you to add an echo effect to your project. This effect is great for simulating different room environments.</p>
+            <ol class="instruction-list">
+                <li>Select the audio clip or part of the audio clip you would like to add reverb to</li>
+                <li>Go to <strong>Effects > Reverb > Reverb...</strong></li>
+                <li>From the Reverb pop-up box, click on the presents drop-down menu and select one. Feel free to experiment on your own as well with all of the knobs. Unfortunately, this effect may be difficult to preview characteristics changes in real-time due to its high latancy, but you can adjust the <strong>Output Levels</strong> while previewing.</li>
+            </ol>
+        </div>
+
+        <div class="tool-reference">
+            <h2>Pitch Shifter</h2>
+            <p>As the name suggests, this effect allows you to change the pitch of your selected audio. You can make your audio very deep like Darth Vader or super high like a chipmunk.</p>
+            <ol class="instruction-list">
+                <li>Select the audio clip(s) you would like to change the pitch to</li>
+                <li>Go to <strong>Effects > Time and Pitch > Pitch Shifter</strong></li>
+                <li>From the Pitch Shifter pop-up box, first play around with the preset options from the drop-down menu. Feel free to experiment by moving the Pitch Transpose knobs. To preview the audio file while adjusting the pitch, playback your audio normally from the Editor Panel. TIP: use the <strong>Loop Playback</strong> feature to keep listening to the sample with no disruptions!</li>
+            </ol>
+        </div>
+
+        <div class="tool-reference">
+            <h2>Mastering...</h2>
+            <p>In case you really want to change up how your audio sounds, mastering is a great effect to add. Mastering is the final step in audio editing, and it ensure that all sounds are balanced, uniform, and consistant.</p>
+            <ol class="instruction-list">
+                <li>Select the audio clip(s) you would like to master</li>
+                <li>Go to <strong>Effects > Special > Mastering...</strong></li>
+                <li>From the Mastering pop-up box, first play around with the preset options from the drop-down menu. Feel free to experiment by moving the anchor points on the line to shift the frequencies being affected. To preview the audio file while mastering, playback your audio normally from the Editor Panel. TIP: use the <strong>Loop Playback</strong> feature to keep listening to the sample with no disruptions!</li>
+            </ol>
+        </div>
+    </section>
+
+    <section class="topic">
+        <h1>Saving and Exporting</h1>
+        <p>It is incredibly important to save your project as you're working on it. Once it is at a final stage that you are happy with, export it so that you can share your creation with the rest of the world!</p>
+
+        <h2>Saving as an Audition Project</h2>
+        <p>This is a standard method of saving which saves your current project so that you can come back to it and edit it later.</p>
+        <ol class="instruction-list">
+            <li>Go to <strong>File > Save As...</strong></li>
+            <li>Name your file an appropriate title</li>
+            <li>Choose a File Location that makes it easy for you to find your project later</li>
+            <li>Click <strong>OK</strong></li>
+        </ol>
+
+        <h2>Saving as a Complete Audition Session</h2>
+        <p>This method of saving will create a new folder with the current audition session as well as all associated files. This is helpful if you plan to work from a different computer but need a one-stop-shop for all of the materials you used, particularly if they all came from different folders.</p>
+        <ol class="instruction-list">
+            <li>Go to <strong>File > Export > Session...</strong></li>
+            <li>Name your folder an appropriate title</li>
+            <li>Choose a File Location that makes it easy for you to find your project later</li>
+            <li>Check the box labeled "Save copies of associated files"</li>
+            <li>Click <strong>OK</strong></li>
+        </ol>
+
+        <h2>Exporting</h2>
+        <p>Exporting will allow you to share your project to the world (if you want)! These file types are smaller and don't requre Adobe Audition to be played.</p>
+        <ol class="instruction-list">
+            <li>Go to <strong>File > Export > Multitrack Mixdown > Entire Session...</strong></li>
+            <li>Name your project an appropriate title</li>
+            <li>Choose a File Location that makes it easy for you to find your project later</li>
+            <li>Select the format you'd like to export your file as</li>
+            <li>Click <strong>OK</strong></li>
+        </ol>
+
+    </section>
+
+    <section class="topic">
+        <h1>Extra Tools and Resources</h1>
+        <h2><a target="_blank" href="http://www.lynda.com/audition">Lynda.com</a></h2>
+        <p>Log-in to Lynda.com with your NetID and password and search "Audition" to reveal many in-depth videos that will definitely guide you in your project development! This costly website is FREE for all UW-Madison students!</p>
+
+        <h2><a target="_blank" href="http://www.freesound.org">Free Sound Effects</a></h2>
+        <p>Need some royalty free sound effects? Go to this website to get some! You're required to open an account, but it's absolutely free and definitely worth the 1 minutes it takes to sign-up!</p>
+
+        <h2><a target="_blank" href="https://www.youtube.com/audiolibrary/music">Audio Library from Youtube</a></h2>
+        <p>Need some free background music? Youtube offers an entire Audio Library just for this purpose! While all songs are free, make sure to see each song's specific conditions for use. Some like to recieve credit, while others do not and it's important to respect that!</p>
+    </section>
+
+    <!-- END MAIN CONTENT -->
+</body>
+
+</html>
